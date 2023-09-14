@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title id="title">Teacher Evaluation</title>
+</head>
+<div>
+    <body>    
+    <header class="header">
+            <h1 id="title" class="text-center">Teachers Evaluation</h1>
+            <p id="description">This survey helps us to improve our courses</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>                
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter Your Name" class="form-control" required />        
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter Your Email" class="form-control" required />
+                <label id="number-label" for="number">Age <span class="optional">(optional)</span></label>
+                <input type="number" id="number" name="age" min="10" max="120" placeholder="Enter Your Age in Numbers" class="form-control">
+        </fieldset>
+        <fieldset>
+            <p>Select your current role or activity</p>
+            <select name="role" id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Enterpreneur</option>
+            <option value="3">Teacher</option>
+            <option value="4">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>How useful did you find this course?</p>
+            <label for="usefull"><input type="radio" value="very-usefull" name="usefull" id="very usefull" class="inline">Very usefull</label>
+            <label for="usefull"><input type="radio" value="usefull" name="usefull" id="usefull" class="inline">Usefull</label>
+            <label for="usefull"><input type="radio" value="not usefull" name="usefull" id="not usefull" class="inline">Not usefull</label>
+        </fieldset>
+        <fieldset>
+            <p>What motivated you to take this course?</p>
+            <select name="motivated" id="motivated">
+            <option value="">Select an option please</option>
+            <option value="1">Learning purposes</option>
+            <option value="2">To grow withing the company</option>
+            <option value="3">To overcome an challenge</option>
+            <option value="4">To develop into a new field</option>
+            </select>                
+        </fieldset>
+        <fieldset>
+            <p>What are you interest to learn next?</p>
+            <label>
+                <input type="checkbox" name="next" class="next" value="excel">Excel
+            </label>
+            <label>
+                <input type="checkbox" name="next" class="next" value="oracle">Oracle
+            </label>
+            <label>
+                <input type="checkbox" name="next" class="next" value="python">Python
+            </label>
+            <label>
+                <input type="checkbox" name="next" class="next" value="rstudio">RStudio
+            </label>
+            <label>
+                <input type="checkbox" name="next" class="next" value="softskills">Soft Skills
+            </label>
+            <label>
+                <input type="checkbox" name="next" class="next" value="investigation">Investigation
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">How whe can improve?:
+                <textarea id="bio" rows="3" cols="30" placeholder="I would like that..." name="comments"></textarea>
+            </label>
+        </fieldset>
+            <input type="submit" value="submit" id="submit">
+        </form>    
+    </body>
+</div>
+</html>

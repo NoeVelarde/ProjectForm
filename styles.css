@@ -1,0 +1,112 @@
+div {
+    background-color: #1b1b32;
+    opacity: 80%;
+    min-width: 400px;
+    max-width: 600px;
+    width: 70vw;
+    margin: 0 auto;
+}
+ 
+header {
+    padding: 1em 0 0 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(39, 17, 75, 0.966), rgba(31, 31, 66, 0.384) ), 
+    url("images/students.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;      
+} 
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;    
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 14px;     
+}
+ 
+form {    
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 500px;
+    width: 60vw;
+    padding: 0 0 2em 0; /*It is to move the submit button up*/    
+}
+
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    padding: 2rem 0;    
+    border-bottom: 3px solid #493d4b;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    width: 100%; /*It causes the problem with the checkboxes alineation*/
+    margin: 10px 0 0 0;  
+    min-height: 2em;  
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    
+}
+
+.inline, .next {
+    width: unset; /*By this you solve the problem with the checkbox elemetns alineation*/
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+} 
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto 1em auto;    
+    width: 60%;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #c932ce;
+    border-color: white;
+    min-width: 300px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
